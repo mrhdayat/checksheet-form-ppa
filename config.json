@@ -1,0 +1,18 @@
+{
+  "replace": [
+    [" - Girimulya/BIB", ""],
+    ["Girimulya/BIB", ""],
+    ["(?i)PPA-BIB-F-(?:PLT|PLANT)-\\s*[0-9A-Z]+(?:\\s*rev\\s*\\d+)?", ""]
+  ],
+  "forbidden": ["girimulya", "ppa-bib"],
+  "ids": {
+    "PPA-BIB-F-PLT-20BDG REV1 PERIODICAL MAINTENANCE CHECKSHEET COMPRESSOR ELECTRIC": "compressor-electric"
+  },
+  "categories": {
+    "truck": "Truck",
+    "dewatering": "Dewatering",
+    "highvoltage": "High Voltage",
+    "compressor": "Compressor"
+  },
+  "title_case": ["axor", "mercy", "hino", "electric"]
+}

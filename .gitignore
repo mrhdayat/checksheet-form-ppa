@@ -1,0 +1,9 @@
+# build output (python3 build.py)
+site/t/
+site/data.json
+tools/.pages
+sampel/
+
+.remember/
+.DS_Store
+~$*.xlsx

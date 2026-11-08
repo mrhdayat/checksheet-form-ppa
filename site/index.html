@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+<title>Checksheet Plant · PPA Berau</title>
+<meta name="description" content="Unduh checksheet maintenance plant PPA Site Berau dalam PDF A4 siap cetak.">
+<meta name="theme-color" content="#f4f4f2">
+<meta name="color-scheme" content="light only">
+<link rel="manifest" href="app.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="top__banner" href="#/"><img src="img/header.jpg" alt="Putra Perkasa Abadi" width="1200" height="197"></a>
+  <div class="top__title">
+    <span>Checksheet Plant <em>· Site Berau</em></span>
+    <span class="net" id="net" hidden>Offline</span>
+  </div>
+</header>
+
+<main id="app" tabindex="-1"></main>
+
+<footer class="foot-band"><img src="img/footer.jpg" alt="" width="1200" height="233" loading="lazy"></footer>
+
+<div class="update" id="update" hidden>
+  <span>Ada versi baru.</span>
+  <button type="button" id="reload">Muat ulang</button>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<dialog class="zoom" id="zoom" aria-label="Pratinjau sheet">
+  <div class="zoom__bar">
+    <span id="zoomTitle"></span>
+    <button type="button" class="zoom__close" id="zoomClose" aria-label="Tutup">✕</button>
+  </div>
+  <div class="zoom__body"><img id="zoomImg" alt=""></div>
+  <div class="zoom__nav">
+    <button type="button" id="zoomPrev" aria-label="Sheet sebelumnya">‹ Prev</button>
+    <label class="zoom__pick"><input type="checkbox" id="zoomCheck"> Dipilih</label>
+    <button type="button" id="zoomNext" aria-label="Sheet berikutnya">Next ›</button>
+  </div>
+</dialog>
+
+<script src="app.js"></script>
+</body>
+</html>
