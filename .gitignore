@@ -7,3 +7,4 @@ sampel/
 .remember/
 .DS_Store
 ~$*.xlsx
+.wrangler/

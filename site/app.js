@@ -98,6 +98,7 @@ function list() {
 function page(t) {
   document.title = `${t.title} · Checksheet PPA Berau`;
   store.set('recent', [t.id, ...store.get('recent', []).filter(x => x !== t.id)].slice(0, 5));
+  setTimeout(() => fetch('vendor/pdf-lib.min.js').catch(() => {}), 2000); // simpan penggabung PDF untuk offline
   let sel = store.get(`sel:${t.id}`, null);
   if (!Array.isArray(sel) || sel.length !== t.sheets.length) sel = t.sheets.map(() => true);
 
